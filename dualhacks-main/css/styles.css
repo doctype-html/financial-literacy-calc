@@ -1,0 +1,153 @@
+body {
+  background: rgb(206,255,218);
+  background: linear-gradient(90deg, rgb(173, 200, 180) 0%, rgb(113, 140, 108) 100%);
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  animation: fade 2s;
+  width: 100%; 
+  margin: 0; 
+  background: linear-gradient (-45deg, rgb(206,255,218), rgb(173, 200, 180), rgb(113, 140, 108), rgb(78, 94, 85));
+  background-size: 400% 400%;
+  animation: fade 2s, gradient 15s ease infinite;
+  height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  main {
+    background: rgb(113, 140, 108);
+    border-style: solid rgb(78, 94, 85) 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+  }
+  
+  #expenses-container, #savings-container {
+    display: none;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .expense-item {
+    margin-bottom: 10px;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+  }
+  
+  h1 {
+    font-style: bold;
+    color: hwb(129 23% 70%);
+  }
+
+  h4 {
+    color: hwb(129 23% 70%);
+    font-size: 18px;
+  }
+  
+  p {
+    color: hwb(129 23% 70%);
+    text-align: center;
+  }
+
+  section {
+    color: hwb(129 23% 70%);
+  }
+  
+  hr {
+    color: hwb(129 23% 70%);
+    background-color: hwb(129 23% 70%);
+    border: solid hwb(129 23% 70%) 5px;
+  }
+  
+  .dropdown {
+    max-width: 13em;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: rgb(88, 110, 84);
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    color: hwb(129 23% 70%);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(130, 160, 125);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(68, 89, 67, 0.2).2;
+    z-index: 1;
+    list-style: none;
+    padding: none;
+  }
+  
+  .dropdown-content a {
+    color: hwb(129 23% 70%);
+    padding: 10px 10px;
+    display: block;
+    text-decoration: none;
+    margin-top: 0;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(160, 194, 154);
+    font-weight: bolder;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover {
+    background-color: rgb(113, 140, 108);
+    color: hwb(129 23% 70%)
+  }
+  
+  button, input {
+    background-color: rgb(130, 164, 124);
+    color: hwb(129 23% 70%);
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    border: ridge  rgb(113, 140, 108);
+  }
